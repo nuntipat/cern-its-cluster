@@ -1,0 +1,31 @@
+{signal: [
+  {name: 'clk', 			wave: 'p............'},
+  {name: 'state',			wave: 'x=...==.=====', data: ["W", "R", "WR", "R", "WR", "R", "WR", "DO"]},
+  ['random',
+  	{name: 'rst',			wave: '10...10......'},
+  	{name: 'number',		wave: 'x==.=.=..=.=.', data: ["N1", "N2", "N3", "N1", "N2", "N3"]},
+  	{name: 'next', 			wave: 'x101.0..1010.'}
+  ],
+  {},
+  ['memory tester',
+   {name: 'addr', 			wave: 'x==.==..=.=..', data: ["0", "1", "2", "0", "1", "2"]},
+   {name: 'rw', 			wave: 'x1...0.......'},
+   {name: 'cmd_valid', 		wave: 'x1....0.1010.'}
+  ],
+  {},
+  ['memory controller',
+   {name: 'mem_rst', 		wave: '10...........'},
+   //{name: 'mem_addr', 		wave: 'x==.==x.', data: ["0", "1","2", "0"]},
+   //{name: 'mem_rw', 		wave: 'x1...0..'},
+   //{name: 'mem_cmd_valid', 	wave: 'x1....0.'},
+   {name: 'mem_busy', 		wave: 'x010.........'},
+   //{name: 'mem_data_in', 	wave: 'x==.=x..', data: ["N1", "N2", "N3"]},
+   {name: 'mem_data_out', 	wave: 'x......=x=x=x', data: ["N1", "N2", "N3"]},
+   {name: 'mem_out_valid', 	wave: 'x0.....101010'}
+  ]
+],
+ head:{
+   text: 'Memory Tester',
+   tick: 0
+ }
+}

@@ -1,0 +1,9 @@
+{signal: [
+  {name: 'clk', 	wave: 'p........'},
+  {name: 'rst',		wave: '10....10.'},
+  {name: 'number',	wave: 'x=.==..=.', data: ["N1", "N2", "N3", "N1"]},
+  {name: 'next', 	wave: 'd0.1.0d0.'}
+],
+ head:{
+   text: 'Random Number Generator'
+ }}
