@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_2_14b" LaunchDir="/home/wordbox/Documents/CERN/Demo/SimpleMIGTest/fpga-2.14/SimpleMIGTest.runs/synth_2_14b" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_2_14b" LaunchDir="/home/wordbox/Documents/CERN/Demo/SimpleMIGTest/fpga-2.14/SimpleMIGTest.runs/impl_2_14b" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_2_14b"/>
+	</Run>
+</Runs>
+
