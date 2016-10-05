@@ -25,5 +25,5 @@ script to match the ZTEX SDK installation directory in their development machine
 
 ## preliminary result
 
-* Write ~1290 MB/s
-* Read ~60 MB/s (due to non pipeline design of the memory controller's wrapper and will be fixed soon)
+* Write ~1303 MB/s
+* Read ~1413 MB/s
