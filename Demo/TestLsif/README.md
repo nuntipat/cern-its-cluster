@@ -14,3 +14,18 @@ low speed interface.
 
 User should edit the $(ZTEXPREFIX) variable in the Makefile and the batch/shell
 script to match the ZTEX SDK installation directory in their development machine.
+
+## Prerequisities
+1. [Java SE Development Kit 8 (JDK8)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+2. [ZTEX EZ-USB SDK](http://www.ztex.de/downloads/#firmware_kit) Release 160513
+(Newer releases aren't currently support due to major API change, see [API changes in releases 20160129 and 20160818](http://wiki.ztex.de/doku.php?id=en:software:api_changes))
+
+## Usage
+1. Edit ZTEXPREFIX variable in the Makefile and the batch/shell script to the path
+to your Ztex's SDK
+2. Build the java console application using the Makefile
+```
+make
+```
+3. Execute the script. The script will upload the bit stream to the FPGA and display
+results to your console
